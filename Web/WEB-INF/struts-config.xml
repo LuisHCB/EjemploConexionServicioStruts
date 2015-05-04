@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"  
+ "http://struts.apache.org/dtds/struts-config_1_3.dtd"  >
+<struts-config>
+
+ <form-beans>
+  <form-bean name="RegistroHuespedMasterForm"
+             type="beans.RegistroHuespedMasterForm" />
+  <form-bean name="RegistroHuespedForm" 
+             type="beans.RegistroHuespedForm" />
+  <form-bean name="RegistroPaseForm"
+             type="beans.RegistroPaseForm" />
+ </form-beans> 
+ <global-forwards>
+  <forward name="index" path="/index.jsp"></forward>
+ </global-forwards> 
+ <action-mappings>
+  <action path="/registroHuespedMaster" name="RegistroHuespedMasterForm" type="servlets.RegistroHuespedMaster"
+     scope="request"   >
+   <forward name="menu" path="/menu.jsp"/>
+  </action>
+  <action path="/registroHuesped" name="RegistroHuespedForm" type="servlets.RegistroHuesped" scope="request" >
+   <forward name="menu" path="/menu.jsp" />
+  </action>
+  <action path="/registroPase" name="RegistroPaseForm" type="servlets.RegistroPase" scope="request" >
+    <forward name="menu" path="/menu.jsp" />
+  </action>
+ </action-mappings>
+ 
+
+</struts-config>
