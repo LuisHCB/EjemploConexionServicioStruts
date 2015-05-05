@@ -22,7 +22,7 @@ public class ServicioLocator extends org.apache.axis.client.Service implements o
     }
 
     // Use to get a proxy class for BasicHttpBinding_JService
-    private java.lang.String BasicHttpBinding_JService_address = "http://127.0.0.1:82/Service.svc"; //"http://127.0.0.1:85/Service.svc";
+    private java.lang.String BasicHttpBinding_JService_address = "http://localhost/ServicioInterfazJorbee/Service.svc";
 
     public java.lang.String getBasicHttpBinding_JServiceAddress() {
         return BasicHttpBinding_JService_address;

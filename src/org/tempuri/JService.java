@@ -18,4 +18,7 @@ public interface JService extends java.rmi.Remote {
     public org.datacontract.schemas._2004._07.Modelo.Respuesta modificarCheck_OutDeReservacion(java.lang.Long idDeReservacion, java.lang.String huespedNombre, java.lang.String huespedApellidos, java.util.Calendar nuevoCheck_Out, java.lang.String nuevoTransaction_Code) throws java.rmi.RemoteException;
     public org.datacontract.schemas._2004._07.Modelo.Respuesta cambiarHabitacion(java.lang.Long idDeReservacion, java.lang.String huespedNombre, java.lang.String huespedApellidos, java.lang.Long nuevoNoHabitacion) throws java.rmi.RemoteException;
     public java.lang.String recuperarReservacion(java.lang.Long idDeReservacion) throws java.rmi.RemoteException;
+    public org.datacontract.schemas._2004._07.Entidades.IdentidadReservaciones[] recuperarReservaciones() throws java.rmi.RemoteException;
+    public org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionesHuespedPases[] recuperarPases() throws java.rmi.RemoteException;
+    public org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionHuesped[] recuperarReservacionesHuesped() throws java.rmi.RemoteException;
 }

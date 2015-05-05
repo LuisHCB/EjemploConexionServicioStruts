@@ -16,8 +16,9 @@ public class BasicHttpBinding_JServiceStub extends org.apache.axis.client.Stub i
     static org.apache.axis.description.OperationDesc [] _operations;
 
     static {
-        _operations = new org.apache.axis.description.OperationDesc[10];
+        _operations = new org.apache.axis.description.OperationDesc[13];
         _initOperationDesc1();
+        _initOperationDesc2();
     }
 
     private static void _initOperationDesc1(){
@@ -279,6 +280,44 @@ public class BasicHttpBinding_JServiceStub extends org.apache.axis.client.Stub i
 
     }
 
+    private static void _initOperationDesc2(){
+        org.apache.axis.description.OperationDesc oper;
+        org.apache.axis.description.ParameterDesc param;
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("RecuperarReservaciones");
+        oper.setReturnType(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "ArrayOfIdentidadReservaciones"));
+        oper.setReturnClass(org.datacontract.schemas._2004._07.Entidades.IdentidadReservaciones[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "RecuperarReservacionesResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservaciones"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[10] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("RecuperarPases");
+        oper.setReturnType(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "ArrayOfIdentidadReservacionesHuespedPases"));
+        oper.setReturnClass(org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionesHuespedPases[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "RecuperarPasesResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservacionesHuespedPases"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[11] = oper;
+
+        oper = new org.apache.axis.description.OperationDesc();
+        oper.setName("RecuperarReservacionesHuesped");
+        oper.setReturnType(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "ArrayOfIdentidadReservacionHuesped"));
+        oper.setReturnClass(org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionHuesped[].class);
+        oper.setReturnQName(new javax.xml.namespace.QName("http://tempuri.org/", "RecuperarReservacionesHuespedResult"));
+        param = oper.getReturnParamDesc();
+        param.setItemQName(new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservacionHuesped"));
+        oper.setStyle(org.apache.axis.constants.Style.WRAPPED);
+        oper.setUse(org.apache.axis.constants.Use.LITERAL);
+        _operations[12] = oper;
+
+    }
+
     public BasicHttpBinding_JServiceStub() throws org.apache.axis.AxisFault {
          this(null);
     }
@@ -308,6 +347,54 @@ public class BasicHttpBinding_JServiceStub extends org.apache.axis.client.Stub i
             java.lang.Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
             java.lang.Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
             java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "ArrayOfIdentidadReservaciones");
+            cachedSerQNames.add(qName);
+            cls = org.datacontract.schemas._2004._07.Entidades.IdentidadReservaciones[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservaciones");
+            qName2 = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservaciones");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "ArrayOfIdentidadReservacionesHuespedPases");
+            cachedSerQNames.add(qName);
+            cls = org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionesHuespedPases[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservacionesHuespedPases");
+            qName2 = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservacionesHuespedPases");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "ArrayOfIdentidadReservacionHuesped");
+            cachedSerQNames.add(qName);
+            cls = org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionHuesped[].class;
+            cachedSerClasses.add(cls);
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservacionHuesped");
+            qName2 = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservacionHuesped");
+            cachedSerFactories.add(new org.apache.axis.encoding.ser.ArraySerializerFactory(qName, qName2));
+            cachedDeserFactories.add(new org.apache.axis.encoding.ser.ArrayDeserializerFactory());
+
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservaciones");
+            cachedSerQNames.add(qName);
+            cls = org.datacontract.schemas._2004._07.Entidades.IdentidadReservaciones.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservacionesHuespedPases");
+            cachedSerQNames.add(qName);
+            cls = org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionesHuespedPases.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
+            qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Entidades", "IdentidadReservacionHuesped");
+            cachedSerQNames.add(qName);
+            cls = org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionHuesped.class;
+            cachedSerClasses.add(cls);
+            cachedSerFactories.add(beansf);
+            cachedDeserFactories.add(beandf);
+
             qName = new javax.xml.namespace.QName("http://schemas.datacontract.org/2004/07/Modelo", "Respuesta");
             cachedSerQNames.add(qName);
             cls = org.datacontract.schemas._2004._07.Modelo.Respuesta.class;
@@ -721,6 +808,108 @@ public class BasicHttpBinding_JServiceStub extends org.apache.axis.client.Stub i
                 return (java.lang.String) _resp;
             } catch (java.lang.Exception _exception) {
                 return (java.lang.String) org.apache.axis.utils.JavaUtils.convert(_resp, java.lang.String.class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public org.datacontract.schemas._2004._07.Entidades.IdentidadReservaciones[] recuperarReservaciones() throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[10]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://tempuri.org/JService/RecuperarReservaciones");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://tempuri.org/", "RecuperarReservaciones"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (org.datacontract.schemas._2004._07.Entidades.IdentidadReservaciones[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (org.datacontract.schemas._2004._07.Entidades.IdentidadReservaciones[]) org.apache.axis.utils.JavaUtils.convert(_resp, org.datacontract.schemas._2004._07.Entidades.IdentidadReservaciones[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionesHuespedPases[] recuperarPases() throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[11]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://tempuri.org/JService/RecuperarPases");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://tempuri.org/", "RecuperarPases"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionesHuespedPases[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionesHuespedPases[]) org.apache.axis.utils.JavaUtils.convert(_resp, org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionesHuespedPases[].class);
+            }
+        }
+  } catch (org.apache.axis.AxisFault axisFaultException) {
+  throw axisFaultException;
+}
+    }
+
+    public org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionHuesped[] recuperarReservacionesHuesped() throws java.rmi.RemoteException {
+        if (super.cachedEndpoint == null) {
+            throw new org.apache.axis.NoEndPointException();
+        }
+        org.apache.axis.client.Call _call = createCall();
+        _call.setOperation(_operations[12]);
+        _call.setUseSOAPAction(true);
+        _call.setSOAPActionURI("http://tempuri.org/JService/RecuperarReservacionesHuesped");
+        _call.setEncodingStyle(null);
+        _call.setProperty(org.apache.axis.client.Call.SEND_TYPE_ATTR, Boolean.FALSE);
+        _call.setProperty(org.apache.axis.AxisEngine.PROP_DOMULTIREFS, Boolean.FALSE);
+        _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
+        _call.setOperationName(new javax.xml.namespace.QName("http://tempuri.org/", "RecuperarReservacionesHuesped"));
+
+        setRequestHeaders(_call);
+        setAttachments(_call);
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
+
+        if (_resp instanceof java.rmi.RemoteException) {
+            throw (java.rmi.RemoteException)_resp;
+        }
+        else {
+            extractAttachments(_call);
+            try {
+                return (org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionHuesped[]) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionHuesped[]) org.apache.axis.utils.JavaUtils.convert(_resp, org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionHuesped[].class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {

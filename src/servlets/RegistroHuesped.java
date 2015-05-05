@@ -13,8 +13,7 @@ public class RegistroHuesped extends Action {
 	public ActionForward execute(ActionMapping mapping, ActionForm form, 
 			HttpServletRequest request, HttpServletResponse response) throws Exception
 			{
-		       RegistroHuespedForm objForm = (RegistroHuespedForm) form;
-		       
+		       RegistroHuespedForm objForm = (RegistroHuespedForm) form;	       
 		       
 		       System.out.println("reservacion:" + objForm.getH_idDeReservacion());		       
 		       System.out.println("nombre:" + objForm.getH_huespedNombre());

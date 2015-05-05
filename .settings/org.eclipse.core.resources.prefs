@@ -1,5 +1,8 @@
 eclipse.preferences.version=1
 encoding//src/org/datacontract/schemas/_2004/_07/CompositeType.java=UTF-8
+encoding//src/org/datacontract/schemas/_2004/_07/Entidades/IdentidadReservacionHuesped.java=UTF-8
+encoding//src/org/datacontract/schemas/_2004/_07/Entidades/IdentidadReservaciones.java=UTF-8
+encoding//src/org/datacontract/schemas/_2004/_07/Entidades/IdentidadReservacionesHuespedPases.java=UTF-8
 encoding//src/org/datacontract/schemas/_2004/_07/Modelo/Respuesta.java=UTF-8
 encoding//src/org/tempuri/BasicHttpBinding_JServiceStub.java=UTF-8
 encoding//src/org/tempuri/JService.java=UTF-8

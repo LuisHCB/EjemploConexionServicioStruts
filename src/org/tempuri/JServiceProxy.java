@@ -104,5 +104,23 @@ public class JServiceProxy implements org.tempuri.JService {
     return jService.recuperarReservacion(idDeReservacion);
   }
   
+  public org.datacontract.schemas._2004._07.Entidades.IdentidadReservaciones[] recuperarReservaciones() throws java.rmi.RemoteException{
+    if (jService == null)
+      _initJServiceProxy();
+    return jService.recuperarReservaciones();
+  }
+  
+  public org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionesHuespedPases[] recuperarPases() throws java.rmi.RemoteException{
+    if (jService == null)
+      _initJServiceProxy();
+    return jService.recuperarPases();
+  }
+  
+  public org.datacontract.schemas._2004._07.Entidades.IdentidadReservacionHuesped[] recuperarReservacionesHuesped() throws java.rmi.RemoteException{
+    if (jService == null)
+      _initJServiceProxy();
+    return jService.recuperarReservacionesHuesped();
+  }
+  
   
 }

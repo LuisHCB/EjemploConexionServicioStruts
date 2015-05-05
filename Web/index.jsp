@@ -1,4 +1,4 @@
-<%@page import="org.datacontract.schemas._2004._07.Modelo.Respuesta"%>
+<%@ page import="org.datacontract.schemas._2004._07.Modelo.Respuesta"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="html" uri="http://struts.apache.org/tags-html" %>
@@ -297,6 +297,9 @@ xmlns:p="http://primefaces.org/ui" >
 	</div>
 </div>
 </div>
+<a class="btn btn-info" href="/EjemploConexionServicioStruts/obtenerRegistros.do" >Ver lista de reservaciones</a>
+<a class="btn btn-info" href="/EjemploConexionServicioStruts/obtenerRegistrosHuesped.do">Ver lista de huesped</a>
+<a class="btn btn-info" href="/EjemploConexionServicioStruts/obtenerPases.do">Ver lista de pases</a>
 <% Respuesta r = (Respuesta) request.getAttribute("Respuesta");
     if(r!=null)
      if(!r.getResultado()) 
