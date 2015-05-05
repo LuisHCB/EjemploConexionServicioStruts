@@ -36,8 +36,8 @@ public class RegistroHuespedMaster extends Action {
 						chekIn,chekOut,
 						objForm.getEstatusReservacion(),objForm.getStatusReservacion());
 		System.out.println("Resultado de la peticion: "+respuesta.getMensaje());
-		
-	  return mapping.findForward("menu");
+		request.setAttribute("Respuesta", respuesta);
+	  return mapping.findForward("index");
 	}
 
 }

@@ -1,3 +1,4 @@
+<%@page import="org.datacontract.schemas._2004._07.Modelo.Respuesta"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="html" uri="http://struts.apache.org/tags-html" %>
@@ -13,6 +14,7 @@ xmlns:p="http://primefaces.org/ui" >
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="./assets/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="./assets/js/notify.min.js"></script>
 
 <title>Insert title here</title>
 </head>
@@ -295,5 +297,21 @@ xmlns:p="http://primefaces.org/ui" >
 	</div>
 </div>
 </div>
+<% Respuesta r = (Respuesta) request.getAttribute("Respuesta");
+    if(r!=null)
+     if(!r.getResultado()) 
+     {%>
+     <script type="text/javascript">     
+    	$.notify("<%=r.getMensaje()%>",{globalPosition: 'top center',className: 'error',});
+     </script>
+    <% 
+     }     
+     else
+     {%>
+     <script type="text/javascript">     
+    	$.notify("<%=r.getMensaje()%>",{globalPosition: 'top center',className: 'success',});
+     </script>
+    <% }
+     %>
 </body>
 </html>
